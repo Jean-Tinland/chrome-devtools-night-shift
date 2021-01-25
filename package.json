@@ -1,0 +1,28 @@
+{
+	"name": "chrome-devtools-night-shift",
+	"version": "0.0.1",
+	"description": "Chrome Devtools themes using the Zero-Base Template",
+	"main": "Gruntfile.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Jean-Tinland/chrome-devtools-night-shift.git"
+	},
+	"author": "Jean Tinland",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Jean-Tinland/chrome-devtools-night-shift/issues"
+	},
+	"homepage": "https://github.com/Jean-Tinland/chrome-devtools-night-shift#readme",
+	"scripts": {
+		"start": "grunt watch",
+		"build": "grunt"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"grunt": "^1.0.1",
+		"grunt-bump": "^0.8.0",
+		"grunt-contrib-compress": "^1.4.1",
+		"grunt-contrib-less": "^1.4.1",
+		"grunt-contrib-watch": "^1.0.0"
+	}
+}
