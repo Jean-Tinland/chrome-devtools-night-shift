@@ -2,11 +2,16 @@
 // Network
 // ==========================================================================
 
-#network-container {
+#network-container,
+.network-toolbar-container,
+.filter-bar {
+	background-color: @global-background !important;
 	border-top: none !important;
 }
 
-#network-container:not(.brief-mode) .network-log-grid.data-grid td.name-column:hover {
+#network-container:not(.brief-mode)
+	.network-log-grid.data-grid
+	td.name-column:hover {
 	text-decoration: none !important;
 }
 
@@ -17,7 +22,10 @@
 	th.sort-descending,
 	th.sortable,
 	.timeline-column {
-		& { border-right: 1px solid @- !important; .contrast(@global-background, 10%) !important };
+		& {
+			border-right: 1px solid @- !important;
+			.contrast(@global-background, 10%) !important;
+		}
 	}
 
 	.network-timeline-grid .resources-divider-label {
@@ -25,7 +33,7 @@
 	}
 
 	.network-timeline-grid .resources-divider {
-		border-right: 1px solid rgba(51,51,51,.8);
+		border-right: 1px solid rgba(51, 51, 51, 0.8);
 	}
 }
 
@@ -64,7 +72,6 @@
 // Key/Value styles for Network Headers
 
 .request-headers-view {
-
 	.header-name {
 		color: @global-label !important;
 	}
@@ -80,16 +87,16 @@
 
 /* Fallback Support */
 .resource-source-frame-fallback {
-	background-color: @- !important; .contrast(@global-background, 5%) !important;
+	background-color: @- !important;
+	.contrast(@global-background, 5%) !important;
 	color: @global-text !important;
 }
 
-
 /* Network Timing Pane */
 .resource-timing-view {
-
 	table {
-		background-color: @- !important; .contrast(@global-background, 5%) !important;
+		background-color: @- !important;
+		.contrast(@global-background, 5%) !important;
 		padding: 20px !important;
 		border-radius: 4px;
 		margin: 20px !important;
@@ -97,13 +104,15 @@
 		td {
 			.network-timing-bar-title {
 				color: @global-text !important;
-				text-shadow: 0 1px 1px @- !important; .contrast(@global-background, 5%);
+				text-shadow: 0 1px 1px @- !important;
+				.contrast(@global-background, 5%);
 			}
 		}
 	}
 
 	.network-timing-table {
-		.footnote, .network-timing-footer {
+		.footnote,
+		.network-timing-footer {
 			a {
 				color: @xml-link;
 			}
@@ -112,10 +121,19 @@
 }
 
 .request-headers-view .parent {
-	& { background-color: @- !important; .contrast(@global-background, 2.5%) };
+	& {
+		background-color: @- !important;
+		.contrast(@global-background, 2.5%);
+	}
 	color: @global-text !important;
-	& { border-top: 1px solid @- !important; .contrast(@global-background, 10%) };
-	& { border-bottom: 1px solid @- !important; .contrast(@global-background, 5%, invert) };
+	& {
+		border-top: 1px solid @- !important;
+		.contrast(@global-background, 10%);
+	}
+	& {
+		border-bottom: 1px solid @- !important;
+		.contrast(@global-background, 5%, invert);
+	}
 	line-height: 18px;
 }
 
@@ -134,12 +152,12 @@
 	.header-toggle:hover {
 		text-shadow: 0 0 10px @global-accent;
 	}
-
 }
 
 //subline under title of node
 .network-cell-subtitle {
-	color: @- !important; .contrast(@global-text, 5%, invert) !important;
+	color: @- !important;
+	.contrast(@global-text, 5%, invert) !important;
 }
 
 .network-log-grid.data-grid th {
@@ -147,7 +165,7 @@
 }
 
 .network.panel .panel-status-bar {
-	border-bottom: none !important
+	border-bottom: none !important;
 }
 
 .data-grid .network-error-row {
@@ -161,7 +179,8 @@
 /**********************************************/
 /* Elements/Network
 /**********************************************/
-.panel:not(.timeline):not(.audits):not(.profiles):not(.cpu-profiler):not(.css-profiler):not(.heap-profiler):not(.canvas-profiler) table,
+.panel:not(.timeline):not(.audits):not(.profiles):not(.cpu-profiler):not(.css-profiler):not(.heap-profiler):not(.canvas-profiler)
+	table,
 .network-graph-bar,
 .network-graph-label,
 .network-graph-bar-area {
@@ -225,7 +244,7 @@
 // network description frame
 .network-status-pane {
 	background: @global-background !important;
-	color: @global-text !important
+	color: @global-text !important;
 }
 
 // ==========================================================================
@@ -234,7 +253,6 @@
 .filmstrip-dialog-label {
 	color: @global-text !important;
 }
-
 
 // ==========================================================================
 // Blocked Urls
@@ -247,7 +265,10 @@
 		border-bottom: none !important;
 
 		.toolbar-shadow {
-			background-image: linear-gradient(@tab-color-top,@tab-color-bottom) !important;
+			background-image: linear-gradient(
+				@tab-color-top,
+				@tab-color-bottom
+			) !important;
 		}
 
 		.toolbar-text {
@@ -277,9 +298,15 @@
 }
 
 // Network Timing Popover
-.network-timing-table tr { color: @global-text !important; }
-.network-timing-table-header td { color: @global-accent !important; }
-.network-timing-bar-title { color: @global-text !important; }
+.network-timing-table tr {
+	color: @global-text !important;
+}
+.network-timing-table-header td {
+	color: @global-accent !important;
+}
+.network-timing-bar-title {
+	color: @global-text !important;
+}
 
 // Film Strip
 .film-strip-view {
