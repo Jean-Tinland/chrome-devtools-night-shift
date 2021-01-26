@@ -15,7 +15,7 @@
 @global-input: #fff9ee;
 @global-selected: #74829b;
 @global-text: #fff9ee;
-@global-toolbar: #39465e;
+@global-toolbar: #1e2737;
 @global-label: #ffd484;
 @global-warn: #ffd484;
 @global-error: #e78482;
@@ -58,7 +58,7 @@
 @css-atom: #fff9ee;
 @css-builtin: #7eddde;
 @css-comment: #98a8c5;
-@css-def: #ad82cb;
+@css-def: #7eddde;
 @css-important: #ad82cb;
 @css-meta: #7eddde;
 @css-number: #8fc8bb;
@@ -92,9 +92,9 @@
 @tab-color-top: @global-toolbar;
 @tab-color-bottom: @global-toolbar;
 @tab-highlighted: @global-accent;
-@tab-label: #ffffff;
-@tab-label-selected: #ffffff;
-@tab-label-unsaved: #ffd484;
+@tab-label: #ffd484;
+@tab-label-selected: #fff9ee;
+@tab-label-unsaved: #ad82cb;
 
 // Toolbars
 @tab-main-icons-padding: 6px;
@@ -173,11 +173,11 @@
 @find-highlight-text: #000;
 
 // Forms
-@form-button-background: lighten(@global-background, 5%);
+@form-button-background: @global-background;
 @form-button-border: lighten(@global-background, 10%);
 @form-button-pressed: inset 0 1px 1px 0 darken(@global-background, 5%),
 	0 1px 1px 0 lighten(@global-background, 5%);
-@form-button-text: darken(@global-text, 10%);
+@form-button-text: @global-accent;
 @form-input-background: lighten(@global-background, 5%);
 @form-input-border: lighten(@global-background, 10%);
 @form-input-text: lighten(@global-text, 10%);
@@ -192,10 +192,10 @@
 @screencast-viewport-border: @global-accent;
 
 // Scrollbars
-@sb-thickness: 13px;
+@sb-thickness: 8px;
 @sb-thumb-border: rgba(0, 0, 0, 0);
 @sb-thumb-color: #2d3845;
-@sb-thumb-roundness: 1px;
+@sb-thumb-roundness: 0;
 
 // Settings
 @settings-background: @global-background;

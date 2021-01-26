@@ -46,7 +46,7 @@ module.exports = function (grunt) {
 		},
 		watch: {
 			canary: {
-				files: ["less/*.less", "themes/*.less"],
+				files: ["less/*.less", "less/**/*.less"],
 				tasks: ["less:generate"],
 			},
 		},
